@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - final_easume_project</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  
+  
+  
+  
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+                $(document).ready(function () {
+            var max_fields = 10; //maximum input boxes allowed
+            var wrapper = $(".input_fields_wrap8"); //Fields wrapper
+            var add_button = $(".add_field_button8"); //Add button ID
+        
+            var x = 1; //initlal text box count
+            $(add_button).click(function (e) { //on add input button click
+                e.preventDefault();
+                if (x < max_fields) { //max input box allowed
+                    x++; //text box increment
+                    $(wrapper).append('<div><input type="text" class="box" name="skill"/><a href="#" class="remove_field">&nbsp;&nbsp;&nbsp;&nbsp;Remove&nbsp;&nbsp;</a></div>'); //add input box
+                }
+            });
+        
+            $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+                e.preventDefault(); $(this).parent('div').remove(); x--;
+            })
+        });
+
+        $(document).ready(function () {
+            var max_fields = 10; //maximum input boxes allowed
+            var wrapper = $(".input_fields_wrap2"); //Fields wrapper
+            var add_button = $(".add_field_button2"); //Add button ID
+
+            var x = 1; //initlal text box count
+            $(add_button).click(function (e) { //on add input button click
+                e.preventDefault();
+                if (x < max_fields) { //max input box allowed
+                    x++; //text box increment
+                    $(wrapper).append('<div><input type="text" class="box" name="mytext[]"/><a href="#" class="remove_field">&nbsp;&nbsp;&nbsp;&nbsp;Remove&nbsp;&nbsp;</a></div>'); //add input box
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+                e.preventDefault(); $(this).parent('div').remove(); x--;
+            })
+        });
+
+
+        $(document).ready(function () {
+            var max_fields = 10; //maximum input boxes allowed
+            var wrapper = $(".input_fields_wrap3"); //Fields wrapper
+            var add_button = $(".add_field_button3"); //Add button ID
+
+            var x = 1; //initlal text box count
+            $(add_button).click(function (e) { //on add input button click
+                e.preventDefault();
+                if (x < max_fields) { //max input box allowed
+                    x++; //text box increment
+                    $(wrapper).append('<div><input type="text" class="box" name="mytext[]"/><a href="#" class="remove_field">&nbsp;&nbsp;&nbsp;&nbsp;Remove&nbsp;&nbsp;</a></div>'); //add input box
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+                e.preventDefault(); $(this).parent('div').remove(); x--;
+            })
+        });
+
+        $(document).ready(function () {
+            var max_fields = 10; //maximum input boxes allowed
+            var wrapper = $(".input_fields_wrap4"); //Fields wrapper
+            var add_button = $(".add_field_button4"); //Add button ID
+
+            var x = 1; //initlal text box count
+            $(add_button).click(function (e) { //on add input button click
+                e.preventDefault();
+                if (x < max_fields) { //max input box allowed
+                    x++; //text box increment
+                    $(wrapper).append('<div><input type="text" class="box" name="mytext[]"/><a href="#" class="remove_field">&nbsp;&nbsp;&nbsp;&nbsp;Remove&nbsp;&nbsp;</a></div>'); //add input box
+                }
+            });
+
+            $(wrapper).on("click", ".remove_field", function (e) { //user click on remove text
+                e.preventDefault(); $(this).parent('div').remove(); x--;
+            })
+        });
+
+      
+      $(document).ready(function() {
+	var max_fields = 15;
+	var wrapper = $(".input_fields_wrap");
+	var add_button = $(".add_field_button");
+	var x = 1; //initlal text box count
+	$(add_button).click(function(e){
+	e.preventDefault();
+	if(x < max_fields){ 
+	x++;
+	$(wrapper).append('<input type="text" class="box-small" id="work_exp_org" name="work_exp_org" maxlength="40"placeholder="Organization"><input type="text" class="box-small" id="work_exp_role" name="work_exp_role" maxlength="4"placeholder="Role"></div><br><div class="input-box">&nbsp;&nbsp;<span class="details_edu">Start Date </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="details_edu">End Date </span> <br><input type="date" class="box" id="work_exp_sdate" name="work_exp_sdate" maxlength="4"placeholder="Start Date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" class="box" id="work_exp_edate" name="work_exp_edate" maxlength="4"placeholder="Start Date"></div>class="remove_field btn btn-info">Remove</div></div>');
+	}
+	});
+	$(wrapper).on("click",".remove_field", function(e){ 
+	e.preventDefault(); $(this).parent('div').remove(); x--;
+	})
+});
+      
+      
+      
+      
+    </script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  
+  
+  
+  
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+   <script type="text/javascript">
+var citiesByState = {
+
+Andhra_Pradesh:[
+			'Adilabad',
+			'Anantapur',
+			'Chittoor',
+			'Kakinada',
+			'Guntur',
+			'Hyderabad',
+			'Karimnagar',
+			'Khammam',
+			'Krishna',
+			'Kurnool',
+			'Mahbubnagar',
+			'Medak',
+			'Nalgonda',
+			'Nizamabad',
+			'Ongole',
+			'Hyderabad',
+			'Srikakulam',
+			'Nellore',
+			'Visakhapatnam',
+			'Vizianagaram',
+			'Warangal',
+			'Eluru',
+			'Kadapa',
+		],  
+  
+Arunachal_Pradesh: [
+			'Anjaw',
+			'Changlang',
+			'East Siang',
+			'Kurung Kumey',
+			'Lohit',
+			'Lower Dibang Valley',
+			'Lower Subansiri',
+			'Papum Pare',
+			'Tawang',
+			'Tirap',
+			'Dibang Valley',
+			'Upper Siang',
+			'Upper Subansiri',
+			'West Kameng',
+			'West Siang',
+	],
+ Assam: [
+			'Baksa',
+			'Barpeta',
+			'Bongaigaon',
+			'Cachar',
+			'Chirang',
+			'Darrang',
+			'Dhemaji',
+			'Dima Hasao',
+			'Dhubri',
+			'Dibrugarh',
+			'Goalpara',
+			'Golaghat',
+			'Hailakandi',
+			'Jorhat',
+			'Kamrup',
+			'Kamrup Metropolitan',
+			'Karbi Anglong',
+			'Karimganj',
+			'Kokrajhar',
+			'Lakhimpur',
+			'Marigaon',
+			'Nagaon',
+			'Nalbari',
+			'Sibsagar',
+			'Sonitpur',
+			'Tinsukia',
+			'Udalguri',
+	],
+ Bihar: [
+			'Araria',
+			'Arwal',
+			'Aurangabad',
+			'Banka',
+			'Begusarai',
+			'Bhagalpur',
+			'Bhojpur',
+			'Buxar',
+			'Darbhanga',
+			'East Champaran',
+			'Gaya',
+			'Gopalganj',
+			'Jamui',
+			'Jehanabad',
+			'Kaimur',
+			'Katihar',
+			'Khagaria',
+			'Kishanganj',
+			'Lakhisarai',
+			'Madhepura',
+			'Madhubani',
+			'Munger',
+			'Muzaffarpur',
+			'Nalanda',
+			'Nawada',
+			'Patna',
+			'Purnia',
+			'Rohtas',
+			'Saharsa',
+			'Samastipur',
+			'Saran',
+			'Sheikhpura',
+			'Sheohar',
+			'Sitamarhi',
+			'Siwan',
+			'Supaul',
+			'Vaishali',
+			'West Champaran',
+			'Chandigarh',
+	], 
+  
+  
+Chhattisgarh: [
+			'Bastar',
+			'Bijapur',
+			'Bilaspur',
+			'Dantewada',
+			'Dhamtari',
+			'Durg',
+			'Jashpur',
+			'Janjgir-Champa',
+			'Korba',
+			'Koriya',
+			'Kanker',
+			'Kabirdham (Kawardha)',
+			'Mahasamund',
+			'Narayanpur',
+			'Raigarh',
+			'Rajnandgaon',
+			'Raipur',
+			'Surguja',
+	],
+Dadra_and_Nagar_Haveli: [
+			'Dadra and Nagar Haveli'
+],
+Daman_and_Diu: [
+			'Daman',
+			'Diu',
+],
+Delhi:[
+			'Central Delhi',
+			'East Delhi',
+			'New Delhi',
+			'North Delhi',
+			'North East Delhi',
+			'North West Delhi',
+			'South Delhi',
+			'South West Delhi',
+			'West Delhi',
+],
+Goa: [
+			'North Goa',
+			'South Goa'
+],
+Gujarat: [
+			'Ahmedabad',
+			'Amreli district',
+			'Anand',
+			'Banaskantha',
+			'Bharuch',
+			'Bhavnagar',
+			'Dahod',
+			'The Dangs',
+			'Gandhinagar',
+			'Jamnagar',
+			'Junagadh',
+			'Kutch',
+			'Kheda',
+			'Mehsana',
+			'Narmada',
+			'Navsari',
+			'Patan',
+			'Panchmahal',
+			'Porbandar',
+			'Rajkot',
+			'Sabarkantha',
+			'Surendranagar',
+			'Surat',
+			'Vyara',
+			'Vadodara',
+			'Valsad',
+],
+Haryana :[
+			'Ambala',
+			'Bhiwani',
+			'Faridabad',
+			'Fatehabad',
+			'Gurgaon',
+			'Hissar',
+			'Jhajjar',
+			'Jind',
+			'Karnal',
+			'Kaithal',
+			'Kurukshetra',
+			'Mahendragarh',
+			'Mewat',
+			'Palwal',
+			'Panchkula',
+			'Panipat',
+			'Rewari',
+			'Rohtak',
+			'Sirsa',
+			'Sonipat',
+			'Yamuna Nagar',
+	],
+Himachal_Pradesh :[
+			'Bilaspur',
+			'Chamba',
+			'Hamirpur',
+			'Kangra',
+			'Kinnaur',
+			'Kullu',
+			'Lahaul and Spiti',
+			'Mandi',
+			'Shimla',
+			'Sirmaur',
+			'Solan',
+			'Una',
+	],
+Jammu_and_Kashmir :[
+			'Anantnag',
+			'Badgam',
+			'Bandipora',
+			'Baramulla',
+			'Doda',
+			'Ganderbal',
+			'Jammu',
+			'Kargil',
+			'Kathua',
+			'Kishtwar',
+			'Kupwara',
+			'Kulgam',
+			'Leh',
+			'Poonch',
+			'Pulwama',
+			'Rajauri',
+			'Ramban',
+			'Reasi',
+			'Samba',
+			'Shopian',
+			'Srinagar',
+			'Udhampur',
+	],
+Jharkhand : [
+			'Bokaro',
+			'Chatra',
+			'Deoghar',
+			'Dhanbad',
+			'Dumka',
+			'East Singhbhum',
+			'Garhwa',
+			'Giridih',
+			'Godda',
+			'Gumla',
+			'Hazaribag',
+			'Jamtara',
+			'Khunti',
+			'Koderma',
+			'Latehar',
+			'Lohardaga',
+			'Pakur',
+			'Palamu',
+			'Ramgarh',
+			'Ranchi',
+			'Sahibganj',
+			'Seraikela Kharsawan',
+			'Simdega',
+			'West Singhbhum',
+	],
+Karnataka : [
+			'Bagalkot',
+			'Bangalore Rural',
+			'Bangalore Urban',
+			'Belgaum',
+			'Bellary',
+			'Bidar',
+			'Bijapur',
+			'Chamarajnagar',
+			'Chikkamagaluru',
+			'Chikkaballapur',
+			'Chitradurga',
+			'Davanagere',
+			'Dharwad',
+			'Dakshina Kannada',
+			'Gadag',
+			'Gulbarga',
+			'Hassan',
+			'Haveri district',
+			'Kodagu',
+			'Kolar',
+			'Koppal',
+			'Mandya',
+			'Mysore',
+			'Raichur',
+			'Shimoga',
+			'Tumkur',
+			'Udupi',
+			'Uttara Kannada',
+			'Ramanagara',
+			'Yadgir',
+	],
+Kerala : [
+			'Alappuzha',
+			'Ernakulam',
+			'Idukki',
+			'Kannur',
+			'Kasaragod',
+			'Kollam',
+			'Kottayam',
+			'Kozhikode',
+			'Malappuram',
+			'Palakkad',
+			'Pathanamthitta',
+			'Thrissur',
+			'Thiruvananthapuram',
+			'Wayanad',
+	],
+Madhya_Pradesh : [
+			'Alirajpur',
+			'Anuppur',
+			'Ashok Nagar',
+			'Balaghat',
+			'Barwani',
+			'Betul',
+			'Bhind',
+			'Bhopal',
+			'Burhanpur',
+			'Chhatarpur',
+			'Chhindwara',
+			'Damoh',
+			'Datia',
+			'Dewas',
+			'Dhar',
+			'Dindori',
+			'Guna',
+			'Gwalior',
+			'Harda',
+			'Hoshangabad',
+			'Indore',
+			'Jabalpur',
+			'Jhabua',
+			'Katni',
+			'Khandwa (East Nimar)',
+			'Khargone (West Nimar)',
+			'Mandla',
+			'Mandsaur',
+			'Morena',
+			'Narsinghpur',
+			'Neemuch',
+			'Panna',
+			'Rewa',
+			'Rajgarh',
+			'Ratlam',
+			'Raisen',
+			'Sagar',
+			'Satna',
+			'Sehore',
+			'Seoni',
+			'Shahdol',
+			'Shajapur',
+			'Sheopur',
+			'Shivpuri',
+			'Sidhi',
+			'Singrauli',
+			'Tikamgarh',
+			'Ujjain',
+			'Umaria',
+			'Vidisha',
+	],
+Maharashtra: [
+			'Ahmednagar',
+			'Akola',
+			'Amravati',
+			'Aurangabad',
+			'Bhandara',
+			'Beed',
+			'Buldhana',
+			'Chandrapur',
+			'Dhule',
+			'Gadchiroli',
+			'Gondia',
+			'Hingoli',
+			'Jalgaon',
+			'Jalna',
+			'Kolhapur',
+			'Latur',
+			'Mumbai City',
+			'Mumbai suburban',
+			'Nandurbar',
+			'Nanded',
+			'Nagpur',
+			'Nashik',
+			'Osmanabad',
+			'Parbhani',
+			'Pune',
+			'Raigad',
+			'Ratnagiri',
+			'Sindhudurg',
+			'Sangli',
+			'Solapur',
+			'Satara',
+			'Thane',
+			'Wardha',
+			'Washim',
+			'Yavatmal',
+		],
+Manipur: [
+			'Bishnupur',
+			'Churachandpur',
+			'Chandel',
+			'Imphal East',
+			'Senapati',
+			'Tamenglong',
+			'Thoubal',
+			'Ukhrul',
+			'Imphal West',
+	],
+Meghalaya: [
+			'East Garo Hills',
+			'East Khasi Hills',
+			'Jaintia Hills',
+			'Ri Bhoi',
+			'South Garo Hills',
+			'West Garo Hills',
+			'West Khasi Hills',
+	],
+Mizoram: [
+			'Aizawl',
+			'Champhai',
+			'Kolasib',
+			'Lawngtlai',
+			'Lunglei',
+			'Mamit',
+			'Saiha',
+			'Serchhip',
+	],
+Nagaland: [
+			'Dimapur',
+			'Kohima',
+			'Mokokchung',
+			'Mon',
+			'Phek',
+			'Tuensang',
+			'Wokha',
+			'Zunheboto',
+	],
+Orissa: [
+			'Angul',
+			'Boudh (Bauda)',
+			'Bhadrak',
+			'Balangir',
+			'Bargarh (Baragarh)',
+			'Balasore',
+			'Cuttack',
+			'Debagarh (Deogarh)',
+			'Dhenkanal',
+			'Ganjam',
+			'Gajapati',
+			'Jharsuguda',
+			'Jajpur',
+			'Jagatsinghpur',
+			'Khordha',
+			'Kendujhar (Keonjhar)',
+			'Kalahandi',
+			'Kandhamal',
+			'Koraput',
+			'Kendrapara',
+			'Malkangiri',
+			'Mayurbhanj',
+			'Nabarangpur',
+			'Nuapada',
+			'Nayagarh',
+			'Puri',
+			'Rayagada',
+			'Sambalpur',
+			'Subarnapur (Sonepur)',
+			'Sundergarh',
+		],
+Pondicherry: [
+			'Karaikal',
+			'Mahe',
+			'Pondicherry',
+			'Yanam',
+],
+Punjab: [
+			'Amritsar',
+			'Barnala',
+			'Bathinda',
+			'Firozpur',
+			'Faridkot',
+			'Fatehgarh Sahib',
+			'Fazilka',
+			'Gurdaspur',
+			'Hoshiarpur',
+			'Jalandhar',
+			'Kapurthala',
+			'Ludhiana',
+			'Mansa',
+			'Moga',
+			'Sri Muktsar Sahib',
+			'Pathankot',
+			'Patiala',
+			'Rupnagar',
+			'Ajitgarh (Mohali)',
+			'Sangrur',
+			'Nawanshahr',
+			'Tarn Taran',
+	],
+Rajasthan: [
+			'Ajmer',
+			'Alwar',
+			'Bikaner',
+			'Barmer',
+			'Banswara',
+			'Bharatpur',
+			'Baran',
+			'Bundi',
+			'Bhilwara',
+			'Churu',
+			'Chittorgarh',
+			'Dausa',
+			'Dholpur',
+			'Dungapur',
+			'Ganganagar',
+			'Hanumangarh',
+			'Jhunjhunu',
+			'Jalore',
+			'Jodhpur',
+			'Jaipur',
+			'Jaisalmer',
+			'Jhalawar',
+			'Karauli',
+			'Kota',
+			'Nagaur',
+			'Pali',
+			'Pratapgarh',
+			'Rajsamand',
+			'Sikar',
+			'Sawai Madhopur',
+			'Sirohi',
+			'Tonk',
+			'Udaipur',
+	],
+Sikkim: [
+			'East Sikkim',
+			'North Sikkim',
+			'South Sikkim',
+			'West Sikkim',
+	],
+Tamil_Nadu: [
+			'Ariyalur',
+			'Chennai',
+			'Coimbatore',
+			'Cuddalore',
+			'Dharmapuri',
+			'Dindigul',
+			'Erode',
+			'Kanchipuram',
+			'Kanyakumari',
+			'Karur',
+			'Madurai',
+			'Nagapattinam',
+			'Nilgiris',
+			'Namakkal',
+			'Perambalur',
+			'Pudukkottai',
+			'Ramanathapuram',
+			'Salem',
+			'Sivaganga',
+			'Tirupur',
+			'Tiruchirappalli',
+			'Theni',
+			'Tirunelveli',
+			'Thanjavur',
+			'Thoothukudi',
+			'Tiruvallur',
+			'Tiruvarur',
+			'Tiruvannamalai',
+			'Vellore',
+			'Viluppuram',
+			'Virudhunagar',
+	],
+Tripura: [
+			'Dhalai',
+			'North Tripura',
+			'South Tripura',
+			'Khowai',
+			'West Tripura',
+	],
+Uttar_Pradesh: [
+			'Agra',
+			'Allahabad',
+			'Aligarh',
+			'Ambedkar Nagar',
+			'Auraiya',
+			'Azamgarh',
+			'Barabanki',
+			'Budaun',
+			'Bagpat',
+			'Bahraich',
+			'Bijnor',
+			'Ballia',
+			'Banda',
+			'Balrampur',
+			'Bareilly',
+			'Basti',
+			'Bulandshahr',
+			'Chandauli',
+			'Chhatrapati Shahuji Maharaj Nagar',
+			'Chitrakoot',
+			'Deoria',
+			'Etah',
+			'Kanshi Ram Nagar',
+			'Etawah',
+			'Firozabad',
+			'Farrukhabad',
+			'Fatehpur',
+			'Faizabad',
+			'Gautam Buddh Nagar',
+			'Gonda',
+			'Ghazipur',
+			'Gorakhpur',
+			'Ghaziabad',
+			'Hamirpur',
+			'Hardoi',
+			'Mahamaya Nagar',
+			'Jhansi',
+			'Jalaun',
+			'Jyotiba Phule Nagar',
+			'Jaunpur district',
+			'Ramabai Nagar (Kanpur Dehat)',
+			'Kannauj',
+			'Kanpur',
+			'Kaushambi',
+			'Kushinagar',
+			'Lalitpur',
+			'Lakhimpur Kheri',
+			'Lucknow',
+			'Mau',
+			'Meerut',
+			'Maharajganj',
+			'Mahoba',
+			'Mirzapur',
+			'Moradabad',
+			'Mainpuri',
+			'Mathura',
+			'Muzaffarnagar',
+			'Panchsheel Nagar district (Hapur)',
+			'Pilibhit',
+			'Shamli',
+			'Pratapgarh',
+			'Rampur',
+			'Raebareli',
+			'Saharanpur',
+			'Sitapur',
+			'Shahjahanpur',
+			'Sant Kabir Nagar',
+			'Siddharthnagar',
+			'Sonbhadra',
+			'Sant Ravidas Nagar',
+			'Sultanpur',
+			'Shravasti',
+			'Unnao',
+			'Varanasi',
+	],
+Uttarakhand: [
+			'Almora',
+			'Bageshwar',
+			'Chamoli',
+			'Champawat',
+			'Dehradun',
+			'Haridwar',
+			'Nainital',
+			'Pauri Garhwal',
+			'Pithoragarh',
+			'Rudraprayag',
+			'Tehri Garhwal',
+			'Udham Singh Nagar',
+			'Uttarkashi',
+	],
+West_Bengal: [
+			'Birbhum',
+			'Bankura',
+			'Bardhaman',
+			'Darjeeling',
+			'Dakshin Dinajpur',
+			'Hooghly',
+			'Howrah',
+			'Jalpaiguri',
+			'Cooch Behar',
+			'Kolkata',
+			'Maldah',
+			'Paschim Medinipur',
+			'Purba Medinipur',
+			'Murshidabad',
+			'Nadia',
+			'North 24 Parganas',
+			'South 24 Parganas',
+			'Purulia',
+			'Uttar Dinajpur',
+	],
+  
+  
+  
+  
+  
+  
+}
+function makeSubmenu(value) {
+if(value.length==0) document.getElementById("citySelect").innerHTML = "<option></option>";
+else {
+var citiesOptions = "";
+for(cityId in citiesByState[value]) {
+citiesOptions+="<option>"+citiesByState[value][cityId]+"</option>";
+}
+document.getElementById("citySelect").innerHTML = citiesOptions;
+}
+}
+function displaySelected() { var country = document.getElementById("countrySelect").value;
+var city = document.getElementById("citySelect").value;
+alert(country+"\n"+city);
+}
+function resetSelection() {
+document.getElementById("countrySelect").selectedIndex = 0;
+document.getElementById("citySelect").selectedIndex = 0;
+}
+</script>
+  
+  
+  
+  
+  
+  
+  
+  <script>
+  
+  $(function() {
+    // Remove button click
+    $(document).on(
+        'click',
+        '[data-role="dynamic-fields-2"] > .form-inline-2 [data-role="remove"]',
+        function(e) {
+            e.preventDefault();
+            $(this).closest('.form-inline-2').remove();
+        }
+    );
+    // Add button click
+    $(document).on(
+        'click',
+        '[data-role="dynamic-fields-2"] > .form-inline-2 [data-role="add"]',
+        function(e) {
+            e.preventDefault();
+            var container = $(this).closest('[data-role="dynamic-fields-2"]');
+            new_field_group2 = container.children().filter('.form-inline-2:first-child').clone();
+            new_field_group2.find('input').each(function(){
+                $(this).val('');
+            });
+            container.append(new_field_group2);
+        }
+    );
+});
+  
+  
+  
+  </script>
+  
+  
+  
+  
+  
+  
+  
+</head>
+
+<body>
+    <section class="contact" id="contact">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="title">Build your resume here!</div>
+            <div class="form__container">
+                &nbsp;&nbsp;<span class="details">Profile Picture</span> <br>
+                <input type="file" id="profile_pic" name="image" accept="image/*" onchange="loadFile(event)"
+                    style="display: none;">
+                &nbsp;&nbsp;<label for="profile_pic" style="cursor: pointer;" class="btn-small">Upload Image</label></p>
+                <br>
+                <p><img id="output" width="200" /></p>
+                <!-- <div class="user-details"> -->
+                <div class="input-box">
+                    <!-- <span class="details">First Name</span> <br> -->
+                    <input type="text" class="box" id="fname" name="f_name" maxlength="10" size="50"
+                        placeholder="First Name" required />
+                    <!-- <span class="details">Middle Name</span> <br> -->
+                    <input type="text" class="box" id="mname" name="m_name" maxlength="10" size="50"
+                        placeholder="Middle Name" />
+                    <!-- <span class="details">Last Name</span> <br> -->
+                    <input type="text" class="box" id="lname" name="l_name" maxlength="10" size="50"
+                        placeholder="Last Name" />
+                </div>
+                <br>
+                <div class="input-box">
+                    <!-- <span class="details">Contact Number</span> </span> <br> -->
+                    <input type="text" class="box" id="contactno" name="mobile_no" maxlength="10"
+                        placeholder="Contact Number">
+                    <!-- <span class="details">Email </span> <br> -->
+                    <input type="email" class="box" id="email" name="email_add" maxlength="60" placeholder="Email">
+                </div>
+                <br>
+                <br>
+                <!-- Profile Picture <br>
+                <input type="file" id="image" name="profile_pic" accept="image/*">
+                <br> <br> -->
+                <div class="input-box">
+                    &nbsp;&nbsp;<span class="details">Date Of Birth</span>
+                    &nbsp;&nbsp;
+                    <input type="date" class="box" id="dob" name="dob" placeholder="date of birth">
+                </div>
+                <br>
+          
+          
+          
+                            
+                   <label for="jobs"></label>
+  <select id="jobs" name="jobs" onchange="makeSubmenu(this.value)" class="box">
+<option value="" disabled selected>Select Job Role</option>>
+    <option value="datascientist">Data Scientist</option>
+    <option value="softwaredeveloper">Software Developer</option>
+    <option value="informationsecurityanalyst">Information Security Analyst</option>
+    <option value="cloud_architect">Cloud Architect</option>
+    <option value="webdeveloper">Web Developer</option>
+    <option value="computersystemsanalyst">Computer Systems Analyst</option>
+    <option value="seoconsultant">SEO Consultant</option>
+    <option value="mlengineer">Machine Learning Engineer</option>
+    <option value="aiengineer">Artificial Intelligence Engineer</option>
+    <option value="appdeveloper">App Developer</option>
+  </select>
+          <input type="text" class="box" id="referral" name="referral" maxlength="40" placeholder="Referral">
+                </div>
+                <br>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+             
+                <div class="input-box">
+                    <!-- <span class="details">Address</span> <br> -->
+                    <textarea rows="1" cols="10" id="addr" name="house_street" class="box-big"
+                        placeholder="Address"></textarea>
+                  
+                  
+            <span class = "loc1">
+       <select id="stateSelect" size="1" onchange="makeSubmenu(this.value)" class="box">
+<option value="" disabled selected>Choose State</option>
+<option>Andhra_Pradesh</option>
+<option>Arunachal Pradesh</option>
+<option>Assam</option>
+<option>Bihar</option>  
+<option>Chhattisgarh</option>
+ <option>Dadra_and_Nagar_Haveli</option>
+  <option>Daman_and_Diu</option>
+  <option>Delhi</option>
+  <option>Goa</option>
+  <option>Haryana</option>
+  <option>Himachal_Pradesh</option>
+  <option>Jammu_and_Kashmir</option>
+  <option>Jharkhand</option>
+  <option>Karnatka</option>
+  <option>Kerala</option>
+  <option>Madhya_Pradesh</option>
+  <option>Maharashtra</option>
+  <option>Manipur</option>
+  <option>Meghalaya</option>
+  <option>Mizoram</option>
+  <option>Nagaland</option>
+  <option>Orrisa</option>
+  <option>Pondicherry</option>
+  <option>Punjab</option>
+  <option>Rajasthan</option>
+  <option>Sikkim</option>
+  <option>Tamil_Nadu</option>
+  <option>Tripura</option>
+  <option>Uttar_Pradesh</option>
+  <option>Uttarakhand</option>
+  <option>West_Bengal</option>
+         </span>
+  <span class loc2>
+</select>
+<select id="citySelect" size="1" class="box">
+<option value="" disabled selected>Choose City</option>
+<option></option>
+</select>       
+              </span>       
+              <input type="text" class="box" id="pincode" name="pincode" maxlength="5" placeholder="Pincode" />      
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <br></br>
+              
+    <br><span class = "details">
+              <div>Education Details</div>
+                <div class="input-box">
+                    
+                  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div data-role="dynamic-fields">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="field-name">/label>
+                        <input type="text" class="form-control" id="field-name" placeholder="Qualification">    
+                          
+                          
+
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                          
+                    </div>
+                      <div class="form-group">
+                        <label class="sr-only" for="field-value">Field Value</label>
+                        <select class="form-control">
+                                                                                                                     
+ <option value="" disabled selected>Qualification
+                          </option>                       
+<option value = "High School"> High School
+</option>
+<option value = "Bachelors"> Bachelors
+</option>
+<option value = "Masters"> Masters
+</option>
+
+                        </select>
+                        
+                        
+                        
+                      </div>
+                    <span>-</span>
+                    <div class="form-group">
+                        <label class="sr-only" for="field-value">Field Value</label>
+                        <input type="text" class="form-control" id="field-value" placeholder="Institution">
+                      </div><span>-</span>
+                      <div class="form-group">
+                        <label class="sr-only" for="field-value">Field Value</label>
+                        <input type="text" class="form-control" id="field-value" placeholder="Grade">
+                  </div>
+                      <div></div>
+                  
+                    
+                    <button class="btn btn-danger" data-role="remove">
+                        Remove
+                    </button>
+                    <button class="btn btn-primary" data-role="add">
+                       Add
+                    </button>
+                </div>  <!-- /div.form-inline -->
+            </div>  <!-- /div[data-role="dynamic-fields"] -->
+        </div>  <!-- /div.col-md-12 -->
+    </div>  <!-- /div.row -->
+                  </div></div>          
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+             
+              
+              
+              
+              
+              
+                  
+        
+                <br><span class = "details">
+              <div>Work Experience</div>
+                <div class="input-box">
+                    
+                  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div data-role="dynamic-fields">
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="field-name">Field Name</label>
+                        <input type="text" class="form-control" id="field-name" placeholder="Organisation">
+                    </div>
+                    <span>-</span>
+                    <div class="form-group">
+                        <label class="sr-only" for="field-value">Field Value</label>
+                        <input type="text" class="form-control" id="field-value" placeholder="Role">
+                  </div><div></div>
+                  <span>Start Date:</span>
+                    <div class="form-group">
+                        <label class="sr-only" for="field-value">Field Value 2</label>
+                        <input type="date" class="form-control" id="field-value" placeholder="Start Date" onfocus (this.type='date')">
+                    </div>
+                  <span>End Date:</span>
+                    <div class="form-group">
+                        <label class="sr-only" for="field-value">Field Value 3</label>
+                       <input type="date" class="form-control" id="field-value" placeholder="End Date" onfocus(this.type='date')">
+                    </div>
+                    <button class="btn btn-danger" data-role="remove">
+                        Remove
+                    </button>
+                    <button class="btn btn-primary" data-role="add">
+                       Add
+                    </button>
+                </div>  <!-- /div.form-inline -->
+            </div>  <!-- /div[data-role="dynamic-fields"] -->
+        </div>  <!-- /div.col-md-12 -->
+    </div>  <!-- /div.row -->
+                  </div></div>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                    <!-- <span class="details">Pincode </span> <br> -->
+                    
+                <br>
+                
+                <br>
+                <div class="input-box">
+                    &nbsp;&nbsp;<span class="details">Skills</span> <br>
+                    <input type="text" class="box" id="skills" name="skill">
+                </div>
+                <div class="input_fields_wrap8"><button class="add_field_button8">Add</button>
+                    <div><input type="text" name="skills[]"></div>
+                </div>
+                <br>
+                <div class="input-box">
+                    &nbsp;&nbsp;<span class="details">Hobbies</span> <br>
+                    <input type="text" class="box" id="hobbies" name="hobby">
+                </div>
+                <div class="input_fields_wrap2"><button class="add_field_button2">Add</button>
+
+                    <div><input type="text" name="hobbies[]"></div>
+                </div>
+                <br>
+                <div class="input-box">
+                    &nbsp;&nbsp;<span class="details">Languages</span> <br>
+                    <input type="text" class="box" id="language" name="lang">
+                </div>
+                <div class="input_fields_wrap3"><button class="add_field_button3">Add</button>
+
+                    <div><input type="text" name="hobbies[]"></div>
+                </div>
+                <br>
+                <div class="input-box">
+                    &nbsp;&nbsp;<span class="details">Social Media Links</span> <br>
+                    <input type="text" class="box" id="social_media" name="social_media" maxlength="40">
+                </div>
+
+                <div class="input_fields_wrap4"><button class="add_field_button4">Add</button>
+                    <div><input type="text" name="social_medi_links[]"></div>
+                </div>
+
+                <br />
+
+                <!-- </div> -->
+                <input type="submit" class="btn" value="Submit" />
+            </div>
+        </form>
+    </section>
+</body>
+<!-- create a Text Field   <input type="button" value="click" onclick="myFunction()"> -->
+
+</html>
+
+
+
+
+
+<!-- <input id="btnGet" type="button" value="Get Values" /> -->
+
+<!-- $("#btnGet").bind("click", function () {
+                var values = "";
+                $("input[name=DynamicTextBox]").each(function () {
+                    values += $(this).val() + "\n";
+                });
+                alert(values);
+            }); -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
